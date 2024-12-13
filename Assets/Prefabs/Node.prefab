@@ -106,7 +106,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1.7
+  m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8207676771028445741
@@ -118,8 +118,8 @@ Rigidbody:
   m_GameObject: {fileID: 1471798297284217141}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 1
-  m_AngularDrag: 0.05
+  m_Drag: 0
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -148,29 +148,29 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 1, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -1.2166384, y: 2.4169998, z: -9.844634}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 1, z: 1}
   m_TwistLimitSpring:
-    spring: 1
+    spring: 0.1
     damper: 1
   m_LowTwistLimit:
-    limit: -45
+    limit: -15
     bounciness: 0
     contactDistance: 5
   m_HighTwistLimit:
-    limit: 45
+    limit: 15
     bounciness: 0
     contactDistance: 5
   m_SwingLimitSpring:
-    spring: 1
+    spring: 0.1
     damper: 1
   m_Swing1Limit:
-    limit: 140
+    limit: 5
     bounciness: 0
     contactDistance: 5
   m_Swing2Limit:
-    limit: 140
+    limit: 5
     bounciness: 0
     contactDistance: 5
   m_EnableProjection: 0

@@ -29,7 +29,7 @@ public class RopeGenerationv1 : MonoBehaviour
         int count = (int) (length / distance); // The amount of nodes necessary to reach the desired length
         for (int i = 0; i < count; i++) {
             GameObject temp;
-            temp = Instantiate(nodePrefab, new Vector3(transform.position.x, transform.position.y - (i * distance), transform.position.z), Quaternion.identity, parentObject.transform);
+            temp = Instantiate(nodePrefab, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y - (i * distance), parentObject.transform.position.z), Quaternion.identity, parentObject.transform);
             temp.transform.eulerAngles = new Vector3(180, 0, 0);
             temp.name = "Node" + i;
 
